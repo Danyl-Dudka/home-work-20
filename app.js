@@ -1,9 +1,11 @@
-const userAge = prompt("How old are you?");
+const userAge = prompt("What year were you born?");
+const currentYear = 2024;
 
 if (userAge == null) {
-    console.log("It's a pity that you did'nt want to enter your age.");
+    console.log("It's a pity that you did'nt want to enter your year of birth.");
 } else {
-    console.log("You are " + userAge + " years old.");
+    const userYear = currentYear - userAge;
+    console.log("You are " + userYear + " years old.");
 }
 
 const userCity = prompt("What city do you live in?");
